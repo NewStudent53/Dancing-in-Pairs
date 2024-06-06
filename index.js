@@ -14,12 +14,12 @@ var Refresh = (window.onload = function() {
         let Student5=[0,0,0,0,1,1,1,1,1,0]
         //            x,x,x,o,o,x,o,x,x,o
         number=number-1
-    
+
         const Suma = Student1[number] + Student2[number] + Student3[number] + Student4[number] + Student5[number]
         number=number +1
         console.log(number)
 
-        if (number ==0) {
+        if (number ==0 || number>10) {
             document.getElementById('results').innerHTML=('Remember: From Day#1 to Day#10')
         }
         else
